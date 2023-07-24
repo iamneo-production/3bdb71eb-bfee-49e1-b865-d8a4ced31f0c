@@ -1,0 +1,29 @@
+/* NewsChannelCard.css*/
+ .news-channel-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .news-channel-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin: 10px;
+  }
+  
+  .news-channel-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

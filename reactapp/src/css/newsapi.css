@@ -1,0 +1,114 @@
+/* Container styles */
+
+.news-container {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Card styles */
+  .news-card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .news-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .news-card p {
+    margin-bottom: 10px;
+  }
+  
+  .news-card hr {
+    margin: 10px 0;
+  }
+  
+  /* Media query for responsive layout */
+  @media screen and (max-width: 768px) {
+    .news-card {
+      width: 100%;
+    }
+  }
+  .news-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .news-content {
+    padding: 20px;
+  }
+  
+  .news-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .news-content p {
+    margin-bottom: 10px;
+  }
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow:
+    2.3px 4.8px 6.7px rgba(0, 0, 0, 0.05),
+    5px 10.7px 15px rgba(0, 0, 0, 0.068),
+    8.6px 18.2px 25.6px rgba(0, 0, 0, 0.075),
+    13.2px 28.1px 39.1px rgba(0, 0, 0, 0.078),
+    19.6px 41.6px 56.9px rgba(0, 0, 0, 0.079),
+    28.8px 61.2px 81.1px rgba(0, 0, 0, 0.078),
+    43.2px 91.7px 115.9px rgba(0, 0, 0, 0.076),
+    68.8px 146.2px 172.8px rgba(0, 0, 0, 0.073),
+    129px 274px 377px rgba(0, 0, 0, 0.07)
+  ;
+    margin-bottom: 20px;
+  }
+  
+  .news-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .news-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .news-content {
+    padding: 20px;
+  }
+  
+  .news-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .news-content p {
+    margin-bottom: 10px;
+  }
+  
+  .news-divider {
+    margin: 0;
+  }
+  

@@ -1,0 +1,134 @@
+
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #667db6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    color: #fff;
+    padding: 20px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .navbar-links li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0082c8;
+    bottom: -4px;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-links li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .navbar-links li a:hover {
+    color: #ffd700;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-button:hover {
+    color: #ffd700;
+  }
+
+
+
+  .button {
+    position: relative;
+    overflow: hidden;
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 1.5rem;
+    background: #0082c8;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  /* //button// */
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(190, 154, 243) 10.8%,
+      rgb(91, 192, 255) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  
+   .login-icon{
+    font-size: 33px;
+  color: #001a4d;
+  margin-left: 10px;
+   }
+   .navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+
+
