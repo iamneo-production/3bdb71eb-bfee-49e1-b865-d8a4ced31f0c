@@ -1,7 +1,7 @@
 
 import React from 'react';
 import axios from 'axios';
-import '../css/entertaiment.css';
+import '../css/newsapi.css';
 class EntertainNews extends React.Component {
   constructor(props) {
     super(props);

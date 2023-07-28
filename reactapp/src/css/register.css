@@ -1,132 +1,69 @@
-.form {
-  background: #50C9C3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* register.css */
 
-box-shadow:
-2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
-6.7px 6.7px 5.3px rgba(0, 0, 0, 0.032),
-12.5px 12.5px 10px rgba(0, 0, 0, 0.04),
-22.3px 22.3px 17.9px rgba(0, 0, 0, 0.048),
-41.8px 41.8px 33.4px rgba(0, 0, 0, 0.058),
-100px 100px 80px rgba(0, 0, 0, 0.08)
-; 
-
-
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 600px;
-  padding: 20px;
-  width: 390px;
-}
-.po{
-  color: #344949;
-}
-.title {
-  color:#1a4040;
-  font-family: sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-  margin-top: 30px;
+/* Styles for the container div */
+.si {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #6cc6d6; */
 }
 
-.subtitle {
-  color:#c3f5f5;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.input-container {
-  height: 50px;
-  position: relative;
-  width: 100%;
-}
-
-.ic1 {
-  margin-top: 40px;
-}
-
-.ic2 {
-  margin-top: 30px;
-}
-
-.input {
-  background-color: #537377;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #035140;
-  font-size: 18px;
-  height: 100%;
-  outline: 0;
-  padding: 4px 20px 0;
-  width: 100%;
-}
-
-.cut {
-  /* background-color: #9ebac4; */
-  
+/* Styles for the signup form div */
+.ss {
+  background-color: #fff;
   border-radius: 10px;
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  top: -20px;
-  transform: translateY(0);
-  transition: transform 200ms;
-  width: 76px;
+  padding: 40px 40px 20px 20px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
 }
 
-.cut-short {
-  width: 50px;
-}
-
-.iLabel {
-  color: #cacadb;
-  font-family: sans-serif;
-  left: 20px;
-  line-height: 14px;
-  pointer-events: none;
-  position: absolute;
-  transform-origin: 0 50%;
-  transition: transform 200ms, color 200ms;
-  top: 20px;
-}
-.as{
- margin-top: 70px;
- margin-left: 560px;
-}
-.input:focus ~ .cut {
-  transform: translateY(8px);
-}
-
-.input:focus ~ .iLabel {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
-}
-
-.input:not(:focus) ~ .iLabel {
-  color: #25544e;
-}
-
-.input:focus ~ .iLabel {
-  color: #25665e;
-}
-
-.submit {
-  background-color: #08d;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  cursor: pointer;
-  font-size: 18px;
-  height: 50px;
-  margin-top: 38px;
+/* Styles for the form title */
+h2 {
   text-align: center;
-  width: 100%;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.submit:active {
-  background-color: #06b;
+/* Styles for input fields */
+.in {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+/* Style for the "Sign Up" button */
+.b {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the "Sign Up" button */
+.b:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the link at the bottom */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
 }
