@@ -1,0 +1,62 @@
+/* contact.css */
+
+/* Container for the contact form */
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  /* Form container */
+  .contact-us-form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  /* Form title */
+  .contact-us-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input fields and textarea */
+  .contact-us-form input,
+  .contact-us-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Submit button */
+  .contact-us-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect on the submit button */
+  .contact-us-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    .contact-us-form {
+      max-width: 90%;
+    }
+  }
+  

@@ -58,7 +58,11 @@ function Navbar() {
     <span class="button-content">Health</span>
 </button></Link>
         </li>
-        
+        <li>
+        <Link to="/contactus"><button class="button">
+    <span class="button-content">Contact Us</span>
+</button></Link>
+        </li>
       </ul>
       
       <div className="navbar-icons">

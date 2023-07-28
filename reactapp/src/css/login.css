@@ -22,16 +22,16 @@
   .form_main::before {
     position: absolute;
     content: "";
-    width: 300px;
+    width: 500px;
     height: 300px;
     background: #56CCF2;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     /* background-color: rgb(209, 193, 255); */
-    transform: rotate(45deg);
-    left: -140px;
-    bottom: 30px;
+    transform: rotate(25deg);
+    left: 320px;
+    bottom: 100px;
     z-index: 1;
     border-radius: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
@@ -80,7 +80,7 @@ background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, F
     padding-left: 30px;
   }
   
-  .inputField:focus {
+  .inputField:focuss {
     outline: none;
     border-bottom: 2px solid rgb(199, 114, 255);
   }

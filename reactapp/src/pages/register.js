@@ -1,40 +1,13 @@
 import React, { useState } from 'react';
 import '../css/register.css';
 import { useNavigate } from 'react-router-dom';
-import { adduser } from '../components/Api';
+// import { adduser } from '../
+import { adduser } from '../service/Api.js';
 import { Link } from 'react-router-dom';
+// import '../css/register.css';
 // import axios from 'axios';
 function Register () {
   const navigate = useNavigate();
-  // const [signupFirstName, setSignupFirstName] = useState('');
-  // const [signupLastName, setSignupLastName] = useState('');
-  // const [signupEmail, setSignupEmail] = useState('');
-  // const [signupPassword, setSignupPassword] = useState('');
-
-
-  // const handleSignup = (e) => {
-  //   e.preventDefault();
-  //   // Perform signup authentication logic here
-
-  //   // Example: Check if signup data is valid
-  //   if (signupFirstName.trim() === '') {
-  //     alert('Please enter a First name.');
-  //     return;
-  //   }
-  //   if (signupLastName.trim() === '') {
-  //     alert('Please enter a Last name.');
-  //     return;
-  //   }
-
-  //   if (signupEmail.trim() === '' || signupPassword.trim() === '') {
-  //     alert('Please enter valid signup credentials.');
-  //     return;
-  //   }
-
-  //   // Navigate to the authenticated page on successful signup
-  //   navigate('/Dashboard');
-  // };
-
   const [formdata, setFormdata] = useState({
     firstname: '',
     lastname: '',
@@ -48,6 +21,9 @@ function Register () {
     setFormdata({ ...formdata, [e.target.id]: e.target.value })
     console.log(formdata);
   }
+  const alertMessage  = () => {
+    alert("Login successfull "+formdata.firstname+" "+formdata.lastname);
+  }
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -55,7 +31,7 @@ function Register () {
     // const res = await axios.post(`http://localhost:9999/set`,formdata);
       console.log(`${res.status}    ${res.data}`);
       
-      navigate('/home');
+      navigate('/');
     }
     catch (error) {
       console.log(error);
@@ -113,7 +89,7 @@ function Register () {
             required
             />
             <br></br>
-          <button className="b" type='submit'>Sign Up</button>
+          <button className="b" type='submit' onClick={alertMessage}>Sign Up</button>
         </form>
       </div>
     </div>
